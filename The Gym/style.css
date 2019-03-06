@@ -1,0 +1,106 @@
+*{margin:0;padding: 0;outline: 0;}
+body{background:#f0f0f0;font-size:14px/20px;margin:0 auto;font:Arial,San-Serif;color:#555;}
+h1{font-size:180%;line-height: 120%;padding:5% 0;}
+img{max-width:100%;height:auto;width:auto;}
+a{color:#fff;text-decoration: none;}
+ul{list-style: none;}
+.clear{clear: both;}
+header{background: #405580;position:fixed;height:86px;width:100%;left:0;top:0;z-index: 1000;opacity:0.9;}
+header .logo{float:left;margin:20px;font-size: 35px;}
+header nav{float:right;padding:35px 20px 20px 0px;}
+.menu-icon {
+ display:hidden;
+ width:40px;
+ height:40px;
+ background: url("img/icon.png") center;
+ 
+}
+.current{text-decoration: underline;}
+a:hover.menu-icon{
+    border-radius: 4px 4px 0px 0px;
+}
+header nav ul{list-style: none;}
+nav ul li{float:left;padding:0px 10px;}
+nav ul li a {
+  font-size: 20px;
+}
+/*This is for slider section*/
+#doc { margin: 40px; }
+#content {
+  margin: 40px auto 0;
+  max-width: 1280px;
+}
+
+.blueberry {
+  margin-top: 110px;
+}
+section{
+    width: 29%;
+    float:left;
+    margin:2% 2%;
+    text-align:center;
+}
+article {
+  float: left;
+  width: 50%;
+  padding: 4%;
+  height: auto;
+}
+aside{
+  float: right;
+  width: 35%;
+  padding: 3%;
+  height: auto;}
+  aside ul li{padding: 3%;}
+footer{background: #333333;overflow: hidden;}
+footer section{color:#fff;}
+.footer-bottom {
+  border-top: 1px solid #6c6c6c;
+  color: #fff;
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+}
+
+/******************Media Query*******************/
+@media screen and (max-width:740px){
+    body{<position></position>: absolute;}
+
+    header{position: fixed;}
+    .menu-icon{display: inline-block;}
+    nav ul,nav:active ul{
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background:#405580;
+        right:20px;
+        top:60px;
+        width:50%;
+    }
+    nav ul li{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    nav:hover ul{
+        display: block;
+    }
+    section{
+        width:100%;
+        float:left;
+        margin:0;
+        padding:0;
+        margin-bottom:10px;
+    }
+    article{
+        float:left;
+        width:100%;
+    }
+     aside{
+        width:100%;
+        float:left;
+        margin:0;
+        padding:0;
+        margin-bottom:10px;
+    }
+}
